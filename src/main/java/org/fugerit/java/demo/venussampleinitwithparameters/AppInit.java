@@ -9,7 +9,7 @@ import org.fugerit.java.doc.base.config.InitHandler;
 
 @Slf4j
 @ApplicationScoped
-@RegisterForReflection( targets = { DocHelper.class, People.class } )
+@RegisterForReflection(targets = { DocHelper.class, People.class })
 public class AppInit {
 
     DocHelper docHelper;
@@ -25,7 +25,7 @@ public class AppInit {
          * (use method InitHandler.initDocAll() for synced startup)
          */
         InitHandler.initDocAllAsync(
-        docHelper.getDocProcessConfig().getFacade().handlers() );
+                docHelper.getDocProcessConfig().getFacade().handlers());
     }
 
 }
